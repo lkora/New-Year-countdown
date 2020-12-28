@@ -278,7 +278,7 @@ function changeGradient(){
 }
 
 const timer_div = document.getElementById("timer");
-const new_years_eve = new Date(2020, 11, 28, 15, 20, 20, 0).getTime();
+const new_years_eve = new Date(2021, 0, 1, 0, 0, 0, 0).getTime();
 
 function timeUntilNewYears(){
     let current_time = new Date().getTime();
