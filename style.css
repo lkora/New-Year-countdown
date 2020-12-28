@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 12pt;
+    background-color: rgba(22, 67, 170, 1);
+    /* cursor: none; */
+    overflow: hidden;
+}
+
+#picture {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+    background-image: url("./background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: -1;
+  }
+
+#overlay1{
+    background-image: linear-gradient(120deg, rgba(140, 58, 70, 0.5), rgba(22, 67, 170, 0.5));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 10s linear;
+    opacity: 0;
+}
+#overlay2{
+    background-image: linear-gradient(120deg, rgba(140, 58, 70, 0.5), rgba(22, 67, 170, 0.5));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 10s linear;
+    opacity: 0;
+}
+
+
+#timer{
+    text-align: center;
+    font-size: 10em;
+    font-family: 'JetBrains Mono', serif;
+    color: white;
+    text-shadow: 5pt 10pt 10pt rgb(10, 29, 73);
+    z-index: 4;
+    padding: 0 10%;
+}
+
+.noselect {
+    -webkit-touch-callout: none;    /* iOS Safari */
+    -webkit-user-select: none;      /* Safari */
+    -khtml-user-select: none;       /* Konqueror HTML */
+    -moz-user-select: none;         /* Old versions of Firefox */
+    -ms-user-select: none;          /* Internet Explorer/Edge */
+    user-select: none;              /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
+/* 
+.cursor{
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;   
+    transition: all 0.2s linear;
+    transition-property: background, transform;
+    backdrop-filter: blur(2px);
+    z-index: 5;
+} 
+*/
